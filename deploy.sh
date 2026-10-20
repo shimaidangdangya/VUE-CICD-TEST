@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 set -e
 
 IMAGE=localhost:5000/vue-cicd-test/app
