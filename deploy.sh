@@ -3,10 +3,10 @@ set -e
 
 IMAGE=localhost:5000/vue-cicd-test/app
 TAG=${1:?用法: sh deploy.sh <版本号> [端口]}
-PORT=${2:-8088}
+PORT=${2:-8082}
 
-# 8088 是"蓝"（正常线上），8089 是"绿"（灰度用）
-if [ "$PORT" = "8088" ]; then NAME=vue-app; else NAME=vue-app-green; fi
+# 8082 是"蓝"（正常线上），8089 是"绿"（灰度用）
+if [ "$PORT" = "8082" ]; then NAME=vue-app; else NAME=vue-app-green; fi
 
 echo "▶ 开始部署版本 $TAG 到端口 $PORT"
 
