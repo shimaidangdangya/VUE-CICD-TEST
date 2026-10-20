@@ -9,7 +9,7 @@ const count = ref(0)
 
 <template>
   <section id="center">
-    <h2>麦当当 吃饱就睡</h2>
+    <h2>麦当当 吃饱就睡, 喝了就醉</h2>
     <div class="hero">
       <img :src="heroImg" class="base" width="170" height="179" alt="" />
       <img :src="vueLogo" class="framework" alt="Vue logo" />
